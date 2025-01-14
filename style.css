@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8e0d4; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f3c1b6; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #6d4c41;
+}
+
+.navbar {
+  background-color: #f3c1b6;
+}
+
+.nav-link {
+  color: #6d4c41 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #c28f7a !important;
+}
+
+main {
+  padding: 20px 0;
+}
+
+h1, h2 {
+  color: #c28f7a;
+}
+
+.imagen-principal {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #6d4c41;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+}
+
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #6d4c41; 
+  color: #fff; 
+  text-align: center; 
+}
+
+.footerNav a {
+  color: #fff; 
+  margin: 0 10px;
+}
+
+.footerNav a:hover {
+  text-decoration: underline;
+}
+
+.redes img {
+  margin: 0 5px; 
+}
+
+.btn-primary {
+  background-color: #c28f7a;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #b77c6c;
+}
