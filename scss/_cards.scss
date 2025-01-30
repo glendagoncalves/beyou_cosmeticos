@@ -1,0 +1,12 @@
+.card {
+    @include card-style;
+  
+    .card-title {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  
+    .card-text {
+      color: $text-color;
+    }
+  }

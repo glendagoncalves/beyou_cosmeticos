@@ -1,0 +1,26 @@
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: $footer-bg;
+    color: $white;
+    text-align: center;
+  
+    .footerNav a {
+      color: $white;
+      margin: 0 10px;
+      transition: $transition;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .redes img {
+      margin: 0 5px;
+      transition: $transition;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }

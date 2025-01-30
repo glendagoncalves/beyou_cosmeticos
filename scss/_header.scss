@@ -1,0 +1,23 @@
+header {
+    background-color: $header-bg;
+    box-shadow: $shadow;
+  
+    h1 {
+      font-size: $font-size-large;
+      color: $secondary-color;
+    }
+  
+    .navbar {
+      background-color: $header-bg;
+    }
+  
+    .nav-link {
+      color: $secondary-color !important;
+      font-weight: bold;
+      transition: $transition;
+  
+      &:hover {
+        color: $primary-color !important;
+      }
+    }
+  }
