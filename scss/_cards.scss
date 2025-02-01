@@ -1,5 +1,8 @@
+@use 'variables' as *;
+@use 'mixins' as mix;
+
 .card {
-    @include card-style;
+  @include mix.card-style;
   
     .card-title {
       color: $secondary-color;
