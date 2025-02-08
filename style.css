@@ -33,7 +33,7 @@ body {
 }
 
 h1, h2 {
-  color: #c28f7a;
+  color: #885a47;
 }
 
 main {
@@ -85,6 +85,7 @@ footer .footerNav a:hover {
 footer .redes img {
   margin: 0 5px;
   transition: all 0.3s ease-in-out;
+  filter: invert(1); 
 }
 footer .redes img:hover {
   transform: scale(1.1);
