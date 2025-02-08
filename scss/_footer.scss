@@ -1,27 +1,29 @@
-@use 'variables' as v;
-@use 'mixins' as m;
+@use 'variables' as *;
+@use 'mixins' as mix;
 
-#footer {
-  background-color: v.$secondary-color;
-  color: v.$white;
-  padding: v.$padding * 2 0;
-
-  .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 v.$padding;
-  }
-
-  .footerNav {
-      a {
-          color: v.$white;
-          text-decoration: none;
-          margin: 0 10px;
-          @include m.transition(color);
-
-          &:hover {
-              color: v.$primary-color;
-          }
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: $footer-bg;
+    color: $white;
+    text-align: center;
+  
+    .footerNav a {
+      color: $white;
+      margin: 0 10px;
+      transition: $transition;
+  
+      &:hover {
+        text-decoration: underline;
       }
+    }
+  
+    .redes img {
+      margin: 0 5px;
+      transition: $transition;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
-}

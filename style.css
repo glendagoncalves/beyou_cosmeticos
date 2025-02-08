@@ -1,53 +1,122 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease-in-out;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
+  background-color: #f8e0d4;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
+h1, h2 {
+  color: #c28f7a;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.imagen-principal {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 header {
-  background-color: #ff69b4;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  background-color: #f3c1b6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+header h1 {
+  font-size: 2.5rem;
+  color: #6d4c41;
 }
-
-section {
-  padding: 20px;
-  text-align: center;
+header .navbar {
+  background-color: #f3c1b6;
+}
+header .nav-link {
+  color: #6d4c41 !important;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+header .nav-link:hover {
+  color: #c28f7a !important;
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #6d4c41;
+  color: #fff;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+}
+footer .footerNav a {
+  color: #fff;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+footer .footerNav a:hover {
+  text-decoration: underline;
+}
+footer .redes img {
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+footer .redes img:hover {
+  transform: scale(1.1);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.card .card-title {
+  color: #6d4c41;
+  font-weight: bold;
+}
+.card .card-text {
+  color: #333;
 }
 
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+.btn-primary {
+  background-color: #c28f7a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: rgb(177.9639175258, 113.5567010309, 87.0360824742);
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-in;
-}
+/*# sourceMappingURL=style.css.map */

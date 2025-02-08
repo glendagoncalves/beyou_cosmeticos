@@ -1,42 +1,25 @@
-@use 'variables' as v;
-@use 'mixins' as m; 
-@use 'sass:color';
-
+@use 'variables' as *;
+@use 'mixins' as mix;
 
 body {
-  font-family: v.$font-stack;
-  color: v.$text-color;
-  background-color: v.$background-color;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  color: v.$primary-color;
-}
-
-a {
-  color: v.$primary-color;
-  text-decoration: none;
-  @include m.transition(color);
-
-  &:hover {
-    color: color.adjust(v.$primary-color, $lightness: -10%);
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
   }
-}
-
-button {
-  background-color: v.$primary-color;
-  color: v.$white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  @include m.transition(background-color);
-
-  &:hover {
-    background-color: color.adjust(v.$primary-color, $lightness: -10%);
-
+  
+  h1, h2 {
+    color: $primary-color;
   }
-}
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  .imagen-principal {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: $shadow;
+  }

@@ -1,11 +1,26 @@
-@use 'variables' as v;
+@use 'variables' as *;
+@use 'sass:color';
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin transition($property: all, $speed: v.$transition-speed) {
-  transition: $property $speed ease-in-out;
-}
+@mixin card-style {
+    border: none;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    transition: $transition;
+  
+    &:hover {
+      box-shadow: $shadow-hover;
+      transform: translateY(-5px);
+    }
+  }
+  
+  @mixin button-style {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    transition: $transition;
+  
+    &:hover {
+      background-color: color.adjust($primary-color, $lightness: -10%);
+    }
+  }
