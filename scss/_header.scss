@@ -1,26 +1,31 @@
-@use 'variables' as *;
-@use 'mixins' as mix;
+@use 'variables' as v;
+@use 'mixins' as m; 
+@use 'sass:color';
+
 
 header {
-    background-color: $header-bg;
-    box-shadow: $shadow;
-  
-    h1 {
-      font-size: $font-size-large;
-      color: $secondary-color;
-    }
-  
-    .navbar {
-      background-color: $header-bg;
-    }
-  
-    .nav-link {
-      color: $secondary-color !important;
-      font-weight: bold;
-      transition: $transition;
-  
-      &:hover {
-        color: $primary-color !important;
+    background-color: v.$primary-color;
+
+  color: v.$white;
+  padding: v.$padding;
+  text-align: center;
+
+  nav {
+      @include m.flex-center;
+
+      a {
+          color: v.$white;
+          margin: 0 15px;
+          @include m.transition(color);
+
+          &:hover {
+            color: v.$white;
+            background-color: color.adjust(v.$primary-color, $lightness: -10%);
+          }
       }
-    }
   }
+
+  h1 {
+      margin-bottom: v.$margin;
+  }
+}

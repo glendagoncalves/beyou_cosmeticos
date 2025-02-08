@@ -1,9 +1,8 @@
-@use 'variables' as *;
-@use 'mixins' as mix;
-@use 'sass:color';
+@use 'variables';
+@use 'mixins';
 @use 'animations';
 @use 'base';
 @use 'header';
 @use 'footer';
-@use 'cards';
-@use 'buttons';
+@use 'sections';
+@use 'forms';

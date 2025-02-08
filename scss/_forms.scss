@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+
+  label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+  }
+
+  input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: v.$margin;
+      border: 1px solid v.$secondary-color;
+      @include m.transition(border-color);
+
+      &:focus {
+          border-color: v.$primary-color;
+      }
+  }
+
+  button {
+      width: 100%;
+  }
+}

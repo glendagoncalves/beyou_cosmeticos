@@ -1,0 +1,10 @@
+@use 'variables' as v;
+
+section {
+  padding: v.$padding;
+  text-align: center;
+
+  h2 {
+      margin-bottom: v.$margin;
+  }
+}

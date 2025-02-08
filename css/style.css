@@ -1,18 +1,138 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 |     @include card-style;
- *   |     ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\_cards.scss 5:5  @use
- *   scss\style.scss 7:1   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502      @include card-style;\d\a   \2502      ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_cards.scss 5:5  @use\a   scss\\style.scss 7:1   root stylesheet";
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #ff69b4;
+}
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: rgb(255, 54, 154.5);
+}
+
+button {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(255, 54, 154.5);
+}
+
+header {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+header nav a:hover {
+  color: #fff;
+  background-color: rgb(255, 54, 154.5);
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+#footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#footer .footerNav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+#footer .footerNav a:hover {
+  color: #ff69b4;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  transition: border-color 0.3s ease-in-out;
+}
+form input:focus, form textarea:focus {
+  border-color: #ff69b4;
+}
+form button {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

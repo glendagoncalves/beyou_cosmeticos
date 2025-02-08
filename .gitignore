@@ -1,1 +1,6 @@
-package.json
+/css/styles.css
+/css/styles.css.map
+
+node_modules/
+
+Thumbs.db
